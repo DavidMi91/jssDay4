@@ -10,3 +10,12 @@ function hide() {
 function myFunction(pic) {
     pic.style.display = "none"
 }
+
+// exercise 2 
+let button = document.getElementById('colorChanger');
+
+function RBC (e) {
+  button.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+}
+
+button.addEventListener("click", RBC);
