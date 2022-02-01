@@ -32,6 +32,7 @@ function checkAttempts2() {
 // Function for player1's dice
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 function rollTheDice1() {
+    checkRolls()
     if (randomNumber1 == 1) {
         document.getElementById("diceImg1").style.backgroundImage = "url('dice1.png')";
     } else if (randomNumber1 == 2) {

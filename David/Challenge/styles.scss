@@ -1,10 +1,25 @@
+#namePlayer1{
+}
+.container{
+    margin-top:5%;
+    h2{
+        margin-left:5%;
+    }
+    button{
+        margin-left:5%;
+        margin-bottom: 5%;
+    }
+}
 #diceImg1{
-    height: 30vh;
-    width: 30vw;
+    height: 35vh;
+    width: 35vw;
     background-repeat: no-repeat;
 }
 #diceImg2{
-    height: 30vh;
-    width: 30vw;
+    height: 35vh;
+    width: 35vw;
     background-repeat: no-repeat;
+}
+#gameResult{
+    margin-left:2.5%;
 }
