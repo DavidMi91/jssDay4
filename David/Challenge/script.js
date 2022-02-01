@@ -11,7 +11,7 @@ document.getElementById("namePlayer2").innerHTML = player2;
 document.getElementById("buttonPlayer1").addEventListener("click", checkAttempts1);
 document.getElementById("buttonPlayer2").addEventListener("click", checkAttempts2);
 
-
+// function lets player1 only roll once 
 function checkAttempts1(){
     if (attempts1 == 1){
         attempts1--;
@@ -20,7 +20,7 @@ function checkAttempts1(){
         alert("No attempts left.")
     }
 }
-
+// function lets player2 only roll once 
 function checkAttempts2(){
     if (attempts2 == 1){
         attempts2--;
@@ -65,7 +65,7 @@ var randomNumber2 = Math.floor(Math.random() * 6) + 1;
         }
 
     }
-
+// function checks if both players have rolled. if both players rolled already -> initiate result function
     function checkRolls(){
         if (attempts1 == 0 && attempts2 == 0){
             displayResult();
@@ -73,6 +73,7 @@ var randomNumber2 = Math.floor(Math.random() * 6) + 1;
             console.log("both players need to roll")
         }
     }
+// shows result: Draw player1win or player2win 
     function displayResult(){
         if (randomNumber1 === randomNumber2) {
             document.getElementById("gameResult").innerHTML = "Draw!";
