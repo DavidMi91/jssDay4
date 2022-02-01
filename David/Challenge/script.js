@@ -29,7 +29,7 @@ function checkAttempts2() {
         alert("No attempts left.")
     }
 }
-// Function for player1's dice
+// Function for player1's roll
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 function rollTheDice1() {
     checkRolls()
@@ -47,7 +47,7 @@ function rollTheDice1() {
         document.getElementById("diceImg1").style.backgroundImage = "url('dice6.png')";
     }
 }
-// Function for player2's dice
+// Function for player2's roll
 var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 function rollTheDice2() {
     checkRolls()
