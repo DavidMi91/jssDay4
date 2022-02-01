@@ -1,9 +1,9 @@
-document.getElementById("circle").addEventListener("mouseover", mouseOver);
+document.getElementById("circle").addEventListener("mouseover", mouseIn);
 document.getElementById("circle").addEventListener("mouseout", mouseOut);
 document.getElementById("circle").addEventListener("click", mouseClick);
 document.getElementById("circle").addEventListener("dblclick", doubleClick);
 
-function mouseOver() {
+function mouseIn() {
   document.getElementById("circleText").innerHTML = "You are in the circle";
 }
 
