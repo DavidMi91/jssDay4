@@ -14,7 +14,7 @@ function myFunction(pic) {
 // exercise 2 
 let button = document.getElementById('colorChanger');
 
-function RBC (e) {
+function RBC () {
   button.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
 }
 
